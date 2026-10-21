@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- COACH REFERENCE. A finished example of what a group asks the AI to build. Tested once in a desktop browser against 26 part files; loading took about a quarter of a second. Not tested on other laptops or with the real file dialog. Do not show it to the group before they build their own. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Part Explorer</title>
+<style>
+ body{margin:0;font:14px system-ui,sans-serif;background:#1d1f24;color:#eee;display:flex;height:100vh}
+ #side{width:290px;overflow:auto;padding:12px;background:#262a31;box-sizing:border-box}
+ #view{flex:1;position:relative} canvas{display:block}
+ h1{font-size:16px;margin:0 0 8px} label{display:block;margin:2px 0;font-size:13px}
+ .row{display:flex;justify-content:space-between;gap:6px} small{color:#9aa}
+ button{margin:4px 4px 4px 0;padding:6px 10px}
+ #info{position:absolute;left:10px;bottom:10px;background:#000a;padding:6px 10px;border-radius:6px;font-size:13px}
+</style></head><body>
+<div id="side">
+ <h1>Part Explorer</h1>
+ <p><small>Choose the .stl files. They stay on this computer.</small></p>
+ <input id="pick" type="file" accept=".stl" multiple>
+ <div><button id="all">All on</button><button id="none">All off</button><button id="home">Reset view</button></div>
+ <label>Explode <input id="explode" type="range" min="0" max="2" step="0.01" value="0"></label>
+ <div id="list"></div>
+</div>
+<div id="view"><div id="info">Load files to begin.</div></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {STLLoader} from 'three/addons/loaders/STLLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const view=document.getElementById('view');
+const scene=new THREE.Scene(); scene.background=new THREE.Color(0x1d1f24);
+const camera=new THREE.PerspectiveCamera(45,1,0.5,5000); camera.up.set(0,0,1);
+const renderer=new THREE.WebGLRenderer({antialias:true}); view.appendChild(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xffffff,0x444455,1.1));
+const d=new THREE.DirectionalLight(0xffffff,1.2); d.position.set(200,-300,400); scene.add(d);
+const loader=new STLLoader(); const parts=[]; const group=new THREE.Group(); scene.add(group);
+function colorFor(n){n=n.toLowerCase();
+ if(n.includes('red'))return 0xd8402f; if(n.includes('silver'))return 0xb8bcc4;
+ if(n.includes('window')&&!n.includes('frame'))return 0x9fd0e6; if(n.includes('logo'))return 0xf1ead0;
+ if(n.includes('ring')||n.includes('frame')||n.includes('nozzle')||n.includes('stair'))return 0xe9e2c8;
+ if(n.includes('turret')||n.includes('gear')||n.includes('cover')||n.includes('cargo'))return 0x2d6f68;
+ return 0x23a897;}
+function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}
+addEventListener('resize',resize); resize();
+function addPart(name,buf){
+ const g=loader.parse(buf); g.computeBoundingBox(); const bb=g.boundingBox;
+ const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:colorFor(name),roughness:.55,metalness:.1}));
+ const c=bb.getCenter(new THREE.Vector3()); const s=bb.getSize(new THREE.Vector3());
+ group.add(m); parts.push({name,mesh:m,home:m.position.clone(),center:c,size:s});}
+function finish(){
+ const box=new THREE.Box3().setFromObject(group); const c=box.getCenter(new THREE.Vector3()); const s=box.getSize(new THREE.Vector3());
+ const L=Math.max(s.x,s.y,s.z); controls.target.copy(c); camera.position.set(c.x+L*.9,c.y-L*1.3,c.z+L*.8); controls.update(); controls.saveState();
+ const list=document.getElementById('list'); list.innerHTML='';
+ parts.sort((a,b)=>a.name.localeCompare(b.name)).forEach(p=>{
+  const l=document.createElement('label'); const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=true;
+  cb.onchange=()=>p.mesh.visible=cb.checked; l.append(cb,' '+p.name+' '); 
+  const sm=document.createElement('small'); sm.textContent=`${p.size.x.toFixed(0)}×${p.size.y.toFixed(0)}×${p.size.z.toFixed(0)}`; l.append(sm); list.append(l);});
+ document.getElementById('info').textContent=`${parts.length} parts · overall ${s.x.toFixed(0)} × ${s.y.toFixed(0)} × ${s.z.toFixed(0)} (file units)`;}
+async function loadFiles(files){for(const f of files){addPart(f.name.replace(/^.*?_/,'').replace(/\.stl$/i,''),await f.arrayBuffer());} finish();}
+document.getElementById('pick').onchange=e=>loadFiles([...e.target.files]);
+document.getElementById('all').onclick=()=>{parts.forEach(p=>p.mesh.visible=true);document.querySelectorAll('#list input').forEach(i=>i.checked=true)};
+document.getElementById('none').onclick=()=>{parts.forEach(p=>p.mesh.visible=false);document.querySelectorAll('#list input').forEach(i=>i.checked=false)};
+document.getElementById('home').onclick=()=>controls.reset();
+const gc=new THREE.Vector3();
+document.getElementById('explode').oninput=e=>{const k=+e.target.value; const box=new THREE.Box3().setFromObject(group);
+ parts.forEach(p=>{const dir=p.center.clone().sub(gc.set(0,40,35)).multiplyScalar(k*0.6); p.mesh.position.copy(p.home).add(dir);});};
+window.__loadURLs=async(urls)=>{for(const u of urls){const b=await (await fetch(u)).arrayBuffer(); addPart(u.split('/').pop().replace(/^.*?_/,'').replace(/\.stl$/i,''),b);} finish();};
+window.__ready=true;
+(function loop(){requestAnimationFrame(loop);controls.update();renderer.render(scene,camera);})();
+</script></body></html>

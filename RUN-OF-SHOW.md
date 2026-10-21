@@ -20,14 +20,14 @@
 |---|---|---|---|
 | Agent | [02](workshops/02-build-an-agent.md) | An email assistant that drafts replies and stops for a person's approval | A chat AI with saved instructions and a knowledge file |
 | Game | [03](workshops/03-build-a-game.md) | A changed Claude Jumpman platformer in Godot | Godot 4.7.2 on the coach's laptop, an AI chat |
-| 3D model | [04](workshops/04-build-a-3d-model.md) | A rotatable cartoon delivery ship built from reference photos | Printed photos, a ruler, an AI chat that accepts photos |
+| 3D model | [04](workshops/04-build-a-3d-model.md) | A 3D viewer for the real part files of a cartoon delivery ship, compared to AI pictures | The 26 STL files on the coach's laptop, a browser, an AI chat |
 | Web app | [05](workshops/05-build-a-web-app.md) | A reskinned Oregon Trail game with a new feature | A browser and an AI chat |
 
 Starter files for each are in [kits/](kits/).
 
 ## Every build has the same five steps
 
-1. **Look** (5 min): play it, read it or measure it.
+1. **Look** (5 min): play it, read it or sort it.
 2. **Spec it** (7 min): write what the AI must match, may decide, and must stop and ask about.
 3. **Build** (28 min): a student drives the keyboard, the coach does not, and the driver rotates every eight minutes.
 4. **Catch** (10 min): find one thing the AI got wrong, using a check that fails differently than the AI.
@@ -64,7 +64,7 @@ Recruit 7 or 8 to land 5 or 6. One coach, one group, the whole build.
 |---|---|
 | All | One laptop per track with an AI assistant, a projector, working Wi-Fi |
 | Game | **Godot 4.7.2 installed** on that laptop (free, no installer, no account) |
-| 3D | A printer for the photos, rulers, pencils |
+| 3D | The STL folder copied to the laptop; the AI pictures printed or on a screen |
 | Agent | An AI tool with saved instructions and a knowledge file; test the instruction length cap |
 
 Each coach tests their track on the real laptop with the real AI on a different day. Without that, no one knows if it fits in an hour.
