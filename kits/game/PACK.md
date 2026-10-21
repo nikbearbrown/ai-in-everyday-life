@@ -17,6 +17,8 @@ The file is `godot/features/player/tuning.gd`. These are the numbers. Every valu
 
 Leave `deceleration`, `terminal_velocity`, `coyote_ticks` and `buffer_ticks` alone for now.
 
+**What was tested (by a script, not a person).** The project's own route test finishes the level on the original numbers and on the Heavy numbers. On the **Moon jump** numbers it fails: the scripted jump no longer lands in a 64-pixel gap, around the middle of the level. That does not prove the level is impossible. A search over other takeoff points found some that do finish it at moon numbers. And jump -420 with the *original* gravity sails over the flag. Some of the project's older unit tests also fail on moon numbers, because they were written for the original feel. So a changed feel can break a level even when the game starts without errors. Whether it is fun is still a question only a player can answer.
+
 ## Step 2. Ask the AI
 
 > This is a small Godot 4.7 file in GDScript, for how a platformer character moves: [paste tuning.gd]. I want it to feel like [Moon jump / Sprinter / Heavy / your idea]. Give me the complete new file with the same variable names and types. Change only the numbers. Then tell me in one sentence what each change does to the game.
