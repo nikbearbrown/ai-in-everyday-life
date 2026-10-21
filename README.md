@@ -29,7 +29,7 @@
 | [01](workshops/01-intro-the-world-has-changed.md) | Intro: The World Has Changed | A live build, a catch round, the two hands |
 | [02](workshops/02-build-an-agent.md) | Build: An Agent | Email assistant with a human approval gate |
 | [03](workshops/03-build-a-game.md) | Build: A Game | Change the Claude Jumpman platformer |
-| [04](workshops/04-build-a-3d-model.md) | Build: A 3D Model | Build a starship from plans |
+| [04](workshops/04-build-a-3d-model.md) | Build: A 3D Model | Build a cartoon delivery ship from photos |
 | [05](workshops/05-build-a-web-app.md) | Build: A Web App | Remake Oregon Trail as your own journey |
 | [06](workshops/06-the-ledger-and-the-demos.md) | The Driver's Ledger and the Demos | One-page record and a live demo round |
 | [07](workshops/07-close-your-next-step.md) | Close: Your Next Step | Graduate study in information systems |
