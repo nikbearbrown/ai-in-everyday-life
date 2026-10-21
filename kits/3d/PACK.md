@@ -42,6 +42,8 @@ The `logos` folder has three plain emblems: star, wave and bolt. Copy **both** `
 
 ## Step 4. Build and look
 
+**Predict first.** Before you press the button, write down which parts of the ship your change will affect and which it will leave alone. After the picture opens, check your list: did anything change that you did not expect?
+
 Double-click `build.command`. After about 20 seconds a picture opens. Open the side view and the fin as well: the front can look right while the back is wrong.
 
 ## Check yourself

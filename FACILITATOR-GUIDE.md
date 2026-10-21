@@ -29,6 +29,10 @@ You are not expected to write code in front of the group, and nobody will ask yo
 
 If something breaks and you do not know why, say so. Paste the exact error into the AI together and read the answer aloud. That is the skill you are teaching.
 
+## This workshop is a draft: change it
+
+Nobody has run these builds with students yet, and you will know more about your track after you have run it than anyone writing the guide. **You are free to change anything you think is better**: the steps, the timing, the prompts, the examples, the order, even the build itself. Keep the five moves (look, spec it with a prediction, build, catch, ledger) and the two hands (master the tools, keep what is human), and change the rest. Run your track yourself first, write down what broke, and send the changes back as a pull request or a note. The repository is open to improvement.
+
 ## Safety rules for using AI with students
 
 1. **One laptop per track.** The coach's laptop, one general-purpose AI assistant, no student accounts. A student drives the keyboard; the coach does not.

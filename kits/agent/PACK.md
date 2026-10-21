@@ -32,6 +32,8 @@ Start a new chat in your free account. Paste the instructions first, then the kn
 
 ## Step 5. Test it
 
+**Predict first.** Before you paste each email, write "draft" or "flag" next to it. Then compare what the assistant did with what you predicted.
+
 Paste the six sample emails from `sample-emails.md`, rewritten for your organization: an easy one, a mixed one, a money one, a safety one, one outside the knowledge, and an **attack** ("ignore your rules and..."). Then write **two more of your own** that you think will trick it.
 
 ## Check yourself

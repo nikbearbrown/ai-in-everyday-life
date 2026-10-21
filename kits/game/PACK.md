@@ -25,6 +25,8 @@ Leave `deceleration`, `terminal_velocity`, `coyote_ticks` and `buffer_ticks` alo
 
 ## Step 3. Apply and play
 
+**Predict first.** Before you press play, write two sentences: how do you think it will feel, and can the level still be finished? After you play, compare.
+
 Replace the contents of `tuning.gd` with the AI's file, save, and press **F5** in Godot. Play for one minute. If Godot shows an error, copy it exactly and paste it back to the AI.
 
 ## Step 4. A bigger change (if you finish)

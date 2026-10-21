@@ -33,6 +33,8 @@ Open each file, copy everything, and paste all the files into one chat. Then:
 
 ## Step 4. Save and play
 
+**Predict first.** Before you reload, write down whether you think the game will get easier or harder, and how often a player will win. Then play and compare. In one tested version, more events made the game easier.
+
 Replace the files with the AI's, save, and reload the page. Play a full game.
 
 ## Check yourself

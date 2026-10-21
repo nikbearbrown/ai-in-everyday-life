@@ -41,9 +41,9 @@ Install Blender. Copy the ship folder to the laptop. Run `build.command` once, a
 ## Run of show (65 minutes)
 
 1. **Look (5 min).** Open the base renders. Name the parts: hull, stripe, trim, fin, wings, windows, engine. Open `params.json` and find the colors.
-2. **Spec it (7 min).** Write a one-sentence brief for a variant: *who is this ship for, and what should it feel like?* A school, a team, a club, a made-up company. Then three lists: **must keep** (the file must stay valid, the ship must still build), **may change** (colors, one proportion), **must ask me** (anything outside the settings file).
+2. **Spec it (7 min).** Write a one-sentence brief for a variant: *who is this ship for, and what should it feel like?* A school, a team, a club, a made-up company. Then three lists: **must keep** (the file must stay valid, the ship must still build), **may change** (colors, one proportion), **must ask me** (anything outside the settings file). Then write your **prediction**: which parts of the ship will this change affect, and which will it leave alone? Make a list of each. For a harder version, pick a brief that forces a tradeoff (for example, friendly to children but serious enough for a hospital board).
 3. **Build (28 min).** The driver gives the AI the colors block and the brief, and asks for the replacement block. Paste it into the settings file and save. Double-click `build.command`. Look at the picture. Rotate the driver every eight minutes. Change one thing at a time.
-4. **Catch (10 min).** Compare the render to your brief. Look at the side view and the fin, not just the front. Did the AI pick colors that match the words? Did it change what you asked and nothing else? Did it break the file? Write the Catch Card.
+4. **Catch (10 min).** Compare the render to your brief. Look at the side view and the fin, not just the front. Did the AI pick colors that match the words? Did it change what you asked and nothing else? Did it break the file? Write the Catch Card. Check your list: which parts actually changed? Did anything change that you did not expect?
 5. **Ledger and demo prep (10 min).** Fill the ledger. Decide what to show live: the base ship, your variant, and the one change that mattered.
 6. **Buffer (5 min).**
 

@@ -57,6 +57,8 @@ Not with students and not with the free plan. As a rough stand-in, a small Claud
 
 ## Notes
 
+- This is a draft, and coaches are free to change anything. Run a track yourself first, then improve it and send the change back as a pull request.
+
 - The ideas are teaching lenses from the author's courses and writing. They are not research findings, and the materials quote no statistics.
 - Any program facts in the close (workshop 07) must be confirmed with your own program office. The repo invents none.
 - The 3D track's ship folder is a variant of a copyrighted character design and is not in this repository. The Oregon Trail code is a third-party MIT project, linked and not copied. The Claude Jumpman game is linked, and its repository carries no license file yet.

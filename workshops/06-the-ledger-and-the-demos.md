@@ -31,9 +31,11 @@
 
 ## The demo (4 minutes per group)
 
-1. **Run it live (2 min).** Show it working. Not a description. The thing running.
-2. **The catch (1 min).** One thing the AI got wrong or made up, and how you caught it.
+1. **The catch (1 min). Start here, before anything is shown.** "What did you catch?" One thing the AI got wrong or made up, how you caught it, and whether it matched what you predicted.
+2. **What you made (2 min).** Now run it live. Not a description. The thing running.
 3. **The ledger (1 min).** What the AI did, what you checked, who signs, and what you did not check.
+
+**Why the catch comes first.** A demo that opens on the finished build rewards the prettiest output, and the AI made the output. Starting with the catch puts the group's own judgment first.
 
 If the live run fails, say so and show the saved recording. That counts as honesty, not as failure.
 
@@ -61,7 +63,7 @@ Three, so most groups win something:
 
 - Say one thing the group did well in *both* hands.
 - Ask one question only a human could answer, such as "Who would you call if this broke?"
-- Never score the AI's polish. Score the group's decisions.
+- Never score the AI's polish. Score the group's decisions. Ask "what did you catch?" before "what did you make?" in the questions too.
 - Never ask a student for personal information.
 
 ## Unplugged

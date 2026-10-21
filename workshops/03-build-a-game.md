@@ -34,9 +34,9 @@ Install Godot 4.7.2. Download the game, open `godot/project.godot`, play it, and
 ## Run of show (65 minutes)
 
 1. **Play it (5 min).** Everyone plays for two minutes. Say what you would change.
-2. **Spec it (7 min).** Pick **one** item from the kit's build menu. Write it as one sentence, then the three lists: **must keep** (the controls, the goal), **may change**, **must ask me** (anything that changes how it feels).
+2. **Spec it (7 min).** Pick **one** item from the kit's build menu. Write it as one sentence, then the three lists: **must keep** (the controls, the goal), **may change**, **must ask me** (anything that changes how it feels). Then write your **prediction**: how will it feel, and can the level still be finished? One sentence each, before you press play.
 3. **Build (28 min).** The driver pastes the relevant file into the AI with the starter prompt, applies the new file, and runs the game. If Godot shows an error, paste it back. Rotate the driver every eight minutes. Change one thing at a time and run after each.
-4. **Catch (10 min).** Pull in one person from another group. They play for two minutes. **Do not speak.** Write down where they died, where they paused, what they tried that you did not expect. Fix one thing you saw.
+4. **Catch (10 min).** Pull in one person from another group. They play for two minutes. **Do not speak.** Write down where they died, where they paused, what they tried that you did not expect. Fix one thing you saw. Compare your prediction with what you saw. Was the level still finishable?
 5. **Ledger and demo prep (10 min).** Fill the ledger. Decide what to show live in 90 seconds.
 6. **Buffer (5 min).**
 

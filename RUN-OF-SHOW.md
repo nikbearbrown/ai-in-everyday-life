@@ -11,8 +11,8 @@
 | 0:00 | [01 Intro](workshops/01-intro-the-world-has-changed.md) (20 min) | A student builds live, the room catches the AI being wrong, coaches show finished work |
 | 0:20 | Break and pick a track (5 min) | Students choose a track, five per group |
 | 0:25 | The build (65 min) | Each group builds one thing, below |
-| 1:30 | [06 Demos](workshops/06-the-ledger-and-the-demos.md) (20 min) | Each group runs its build live and answers for it |
-| 1:50 | [07 Close](workshops/07-close-your-next-step.md) (10 min) | Graduate students and the anchor |
+| 1:30 | [06 Demos](workshops/06-the-ledger-and-the-demos.md) (20 min) | Each group starts with what it caught, then runs its build live and reads its ledger |
+| 1:50 | [07 Close](workshops/07-close-your-next-step.md) (10 min) | The learning close first, then a clean break, then graduate study |
 
 ## The four builds (about an hour each)
 
@@ -28,9 +28,9 @@ Starter files for each are in [kits/](kits/).
 ## Every build has the same five steps
 
 1. **Look** (5 min): play it, read it or sort it.
-2. **Spec it** (7 min): write what the AI must match, may decide, and must stop and ask about.
+2. **Spec it** (7 min): write what the AI must match, may decide, and must stop and ask about, then **write your prediction** of what will happen before you run it.
 3. **Build** (28 min): a student drives the keyboard, the coach does not, and the driver rotates every eight minutes.
-4. **Catch** (10 min): find one thing the AI got wrong, using a check that fails differently than the AI.
+4. **Catch** (10 min): compare what happened with your prediction, and find one thing the AI got wrong, using a check that fails differently than the AI.
 5. **Ledger and demo prep** (10 min), plus 5 minutes of buffer.
 
 ## Other lengths

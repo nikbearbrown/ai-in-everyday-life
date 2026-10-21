@@ -31,9 +31,9 @@ Download the game. Open `index.html`. Play to the end. Read the files in `js/` a
 ## Run of show (65 minutes)
 
 1. **Play it (5 min).** Everyone plays two minutes. What is the goal? What can go wrong? Who decides?
-2. **Spec it (7 min).** Pick the new journey, the new resources, and one new feature from the kit. Write the three lists: **must keep** (it must still run as one file, the turn structure), **may change** (names, events, numbers), **must ask me** (the win and lose conditions).
+2. **Spec it (7 min).** Pick the new journey, the new resources, and one new feature from the kit. Write the three lists: **must keep** (it must still run as one file, the turn structure), **may change** (names, events, numbers), **must ask me** (the win and lose conditions). Then write your **prediction**: will the game get easier or harder, and how often will a player win?
 3. **Build (28 min).** The driver pastes the game into the AI with the starter prompt, saves the new files, and reloads the page. Rotate the driver every eight minutes. Run after every change.
-4. **Catch (10 min).** Click every button. Win once. Lose once. Reload. Look for "undefined," numbers that go negative, a loss that the player could not have avoided. Fix one. Write the Catch Card.
+4. **Catch (10 min).** Click every button. Win once. Lose once. Reload. Look for "undefined," numbers that go negative, a loss that the player could not have avoided. Fix one. Write the Catch Card. Compare with what happened. More events does not always mean harder.
 5. **Ledger and demo prep (10 min).** Fill the ledger. Decide what to show live.
 6. **Buffer (5 min).**
 

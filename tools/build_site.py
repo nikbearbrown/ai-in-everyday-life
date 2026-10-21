@@ -103,9 +103,9 @@ TRACKS = [
          fun="Invent any organization: a community garden, a film society, a pet-sitting group, a board-game café. Decide what your assistant must never answer. Then write the emails most likely to trick it.",
          opens="The Claude app, in a new chat. Your club's notes in a short document.",
          moves=[("Look", "Read the sample club and the six test emails. Which ones should the assistant refuse to answer?"),
-                ("Spec it", "Write what the assistant must match, may decide, and must stop and ask about. Write each stop as a rule someone else could test."),
+                ("Spec it", "Write what the assistant must match, may decide, and must stop and ask about. Write each stop as a rule someone else could test. Then write your prediction: for each test email, draft or flag?"),
                 ("Build", "Paste your spec and your club's notes into Claude. Paste the emails one at a time."),
-                ("Catch", "Write two emails of your own to break it. Find one real failure and fix the instructions, not just the answer."),
+                ("Catch", "Compare what it did with your predictions. Write two emails of your own to break it. Find one real failure and fix the instructions, not just the answer."),
                 ("Ledger", "Write down what the AI did, what you checked, who signs, and what you did not check.")],
          bring="The email that broke it, the rule you added, and one thing you would still not let it do.",
          pack="kits/agent/PACK.md"),
@@ -115,9 +115,9 @@ TRACKS = [
          fun="Make the jump floaty like the moon, the runner fast, or the character heavy. Then change the level itself: move the tokens, add a gap, change how the bugs move.",
          opens="The Godot game engine (free) on your group's laptop, with the game open, and the Claude app.",
          moves=[("Look", "Play the game for two minutes. What would you change?"),
-                ("Spec it", "Pick one feel. Write what must stay the same (the controls, the goal) and what you may change."),
+                ("Spec it", "Pick one feel. Write what must stay the same (the controls, the goal) and what you may change. Then write your prediction: how will it feel, and can the level still be finished?"),
                 ("Build", "Give Claude the small file with the numbers and your request. Paste its answer in and press play."),
-                ("Catch", "Watch someone from another group play without speaking. Where do they stop or fall? Can the level still be finished?"),
+                ("Catch", "Watch someone from another group play without speaking. Where do they stop or fall? Was the level still finishable, as you predicted?"),
                 ("Ledger", "Write down what the AI did, what you checked, who signs, and what you did not check.")],
          bring="What the other player did that you did not expect, and whether it was fun.",
          pack="kits/game/PACK.md"),
@@ -127,9 +127,9 @@ TRACKS = [
          fun="A beach brand, a hospital night shift, a robotics club, a band, a bakery. Keep the ship or invent a new one: different shape, different engines, anything. The moves stay the same; the ship does not have to.",
          opens="Blender (free) on your group's laptop, the ship folder, and the Claude app.",
          moves=[("Look", "Open the picture of the starting ship and find the colors in the settings file."),
-                ("Spec it", "Write who your ship is for and how it should feel. Say what must stay and what may change."),
+                ("Spec it", "Write who your ship is for and how it should feel. Say what must stay and what may change. Then write your prediction: which parts will this change affect, and which will it leave alone?"),
                 ("Build", "Ask Claude for a new colors block, paste it in, and press the rebuild button. About twenty seconds."),
-                ("Catch", "Look at the ship from the other side. Is every color a real color code? Is the emblem right on both sides?"),
+                ("Catch", "Check your list of predicted changes. Look at the ship from the other side. Is every color a real color code? Is the emblem right on both sides?"),
                 ("Ledger", "Write down what the AI did, what you checked, who signs, and what you did not check.")],
          bring="The thing you only noticed by looking at it from the other side.",
          pack="kits/3d/PACK.md"),
@@ -139,9 +139,9 @@ TRACKS = [
          fun="A food truck season, a band on tour, a colony on Mars, a club's year. Decide what counts as winning, because the game only knows the rules you chose.",
          opens="A web browser and the Claude app. The game's files in one folder.",
          moves=[("Look", "Play the starting game for a few minutes. What is the goal, and what can go wrong?"),
-                ("Spec it", "Pick your journey, your supplies and one new feature. Say what must stay working."),
+                ("Spec it", "Pick your journey, your supplies and one new feature. Say what must stay working. Then write your prediction: will the game get easier or harder, and how often will a player win?"),
                 ("Build", "Paste the game's files into Claude with your request. Save its files and reload the page."),
-                ("Catch", "Click every button. Win once and lose once. Look for numbers below zero and words that still belong to the old theme."),
+                ("Catch", "Compare with your prediction. Click every button. Win once and lose once. Look for numbers below zero and words that still belong to the old theme."),
                 ("Ledger", "Write down what the AI did, what you checked, who signs, and what you did not check.")],
          bring="What your game rewards, and whether that is what you meant it to teach.",
          pack="kits/app/PACK.md"),
@@ -173,7 +173,7 @@ def build():
 <li><span class="t">20 min</span><div><b>Start.</b> A student builds something live, we try to catch the AI being wrong, and you see a finished example of each choice.</div></li>
 <li><span class="t">5 min</span><div><b>Choose.</b> Pick one of the four builds. Groups of about five.</div></li>
 <li><span class="t">65 min</span><div><b>Make it.</b> Five moves: look, spec it, build, catch, ledger. One person types, the group directs, and you swap every eight minutes.</div></li>
-<li><span class="t">20 min</span><div><b>Show it.</b> Each group runs what it made, live, and says what the AI got wrong.</div></li>
+<li><span class="t">20 min</span><div><b>Show it.</b> Each group starts with what it caught, then runs what it made, live, and reads its ledger.</div></li>
 <li><span class="t">10 min</span><div><b>Talk.</b> What did you make? What surprised you? What would you do next?</div></li>
 </ul>
 
@@ -187,9 +187,9 @@ def build():
 
 <h2>What happens at the end</h2>
 <ul class="plain">
-<li>Each group gets four minutes to show its build running, tell one thing the AI got wrong, and read its one-page ledger.</li>
+<li>Each group gets four minutes. It starts with what it caught: one thing the AI got wrong and how you found it. Then it runs its build, live, and reads its one-page ledger.</li>
 <li>The ledger has four parts: what the AI did, what you checked and how, what a person decided and signs, and one honest line about what you did not check.</li>
-<li>Then we talk, together. There are no right answers.</li>
+<li>Then we close in two parts: each person says one thing they would trust the AI with and one thing they would not, and after a short break there is information about graduate study at SEIS.</li>
 <li>You leave with your build and the materials to make more.</li>
 </ul>
 <p class="note">This workshop has not been run with students yet. The builds were tested by running them, not by people using them. If something breaks, that is useful, and we want to hear about it.</p>
@@ -244,6 +244,7 @@ def build():
 <li>Students type; you do not. Swap the driver every eight minutes.</li>
 <li>Ask the question rather than typing the answer: "What would you tell the AI?" "What does the error say?"</li>
 <li>If something breaks and you do not know why, say so, paste the exact error into Claude together, and read the answer aloud. That is the skill you are teaching.</li>
+<li>This is a draft, and you are free to change anything you think is better. Run your build first, then improve it.</li>
 </ul>
 <p><a class="btn" href="{BLOB}FACILITATOR-GUIDE.md">Facilitator guide</a><a class="btn alt" href="{BLOB}RUN-OF-SHOW.md">Run of show</a><a class="btn alt" href="{BLOB}THE-THROUGH-LINE.md">The idea behind it</a></p>
 <h2>Each track</h2>

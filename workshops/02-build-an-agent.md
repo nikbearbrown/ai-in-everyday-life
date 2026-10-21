@@ -32,9 +32,9 @@ Run the kit once with the actual tool. Check the instruction length cap and how 
 ## Run of show (65 minutes)
 
 1. **Read the original (5 min).** Read the seven-step list in the kit. Where is the human? Circle it.
-2. **Spec it (7 min).** Pick an organization (use the invented one, or invent a club, a team or an office). Write the three lists: **must match** (only the documents, under 100 words), **may decide** (wording), **must stop and ask a human** (money, safety, legal, complaints, anything not in the documents). Write each hand-off trigger as a condition another person could test.
+2. **Spec it (7 min).** Pick an organization (use the invented one, or invent a club, a team or an office). Write the three lists: **must match** (only the documents, under 100 words), **may decide** (wording), **must stop and ask a human** (money, safety, legal, complaints, anything not in the documents). Write each hand-off trigger as a condition another person could test. Then write your **prediction**: for each test email, write "draft" or "flag" before you paste it.
 3. **Build (28 min).** The driver pastes the starter spec into the tool and attaches the knowledge. Run the six sample emails. Rotate the driver every eight minutes. Fix the instructions, not just the answer, each time something fails.
-4. **Catch (10 min).** Write your own two hard emails and try to break it. Find at least one failure. Fix it. Write the Catch Card: what it did, what it should have done, how you checked.
+4. **Catch (10 min).** Write your own two hard emails and try to break it. Find at least one failure. Fix it. Write the Catch Card: what it did, what it should have done, how you checked. Compare your predictions with what it did. Every disagreement is worth a look: who was right?
 5. **Ledger and demo prep (10 min).** Fill the ledger. Decide what to show live: one easy email, one flagged email, one attack.
 6. **Buffer (5 min).**
 
