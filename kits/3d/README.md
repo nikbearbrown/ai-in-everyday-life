@@ -1,48 +1,41 @@
-# Kit: the delivery ship (3D model)
+# Kit: the Blender ship (3D model)
 
 ## Executive summary
 
-**What this is.** A 3D-printable model of a teal cartoon delivery spaceship (the Planet Express ship from *Futurama*), supplied as 26 separate part files (STL, the format 3D printers use), plus a set of AI-generated reference pictures of the ship. Your group has an AI build a viewer in a web page that loads the real parts, lets you switch parts on and off, explode the ship apart and read each part's size, and then compares the real geometry to the AI pictures to find what the pictures got wrong. **Why it works for an hour.** The parts are real and named (hull, wings, dome, turret, nozzle, windows, logos), the ship is instantly recognizable, and the files are *print parts, not an assembled ship*, so there is a real puzzle in figuring out where things go. **Status.** One reference viewer was built and tested once; nobody has run this as a workshop.
+**What this is.** A cartoon delivery spaceship that is **built entirely by a script in Blender**, from one settings file (`params.json`). Your group makes a variant by editing the settings: new colors, one new proportion. After each change a one-click script rebuilds the ship and shows a picture in about 20 seconds. **Why it works for an hour.** A simple AI only has to edit a few lines of a settings file, not model anything. **Status.** The rebuild loop was run and tested once, by Claude, on one Mac with Blender 5.1.2. It has not been tried with Muse, Grok or Codex, or with students.
 
-## The files are not in this repository
+## The kit is not in this repository
 
-- **The 26 STL files** are a designer's 3D-print model (the files are named "GOODesign"). The license is unknown, so they are not included. The facilitator copies the folder to the laptop from their own files. Confirm the license and where it came from before the day, and keep it classroom-only.
-- **The reference pictures** are AI-generated (made with an image generator and then transformed). They are **not** ground truth. That is the point of the track: the pictures are fluent, and the files are real.
+- **The ship folder** (the script, the settings, the logo images, the rebuild button) is a variant of a model that Grok Bot built, in the course repo. It is a copyrighted character design, and the school-logo variant uses a university's marks, so the folder is not published here. The facilitator supplies it from their own files, for classroom use. The unmodified base model, by Grok Bot, is public in the course repo: <https://github.com/nikbearbrown/csye-7270-building-virtual-environments> (the `blender/planet-express-ship-grok` folder).
+- **Blender** is free from blender.org. It is a large download. Install it on the coach's laptop before the day, and write down the version you tested.
 
-## What the files are (from the one inspection so far)
+## What is in the ship folder
 
-- **26 files, about 35 MB, about 737,000 triangles.** A modern laptop loads them in well under a second.
-- **Named parts:** Hull_Front, Hull_Rear, Wing_Left, Wing_Right, Wing_Top, Dome, Turret_A and B, Nozzle_A and B, Window, Window_Frame, Cargo_A and B, Landing_Gear, Stair_A and B, Logo_A, B and C, Ring, Red_Parts, Silver_Parts_A and B, and covers.
-- **Not an assembled ship.** The hull halves and most body parts sit around the origin, but the wings, landing gear and silver parts are laid out off to the side, the way they sit on a print bed. Putting the ship together is part of the job.
-- **Units are not labeled.** The sizes look like millimeters (hull front plus rear is about 51 × 137 × 90), but nothing in the files says so. Treat any AI statement of units as a claim to check.
+| File | What it does |
+|---|---|
+| `build.command` | Double-click it. It rebuilds the ship from the settings and opens a picture. About 11 seconds in testing |
+| `scripts/params.json` | The settings. The `colors` block changes the hull, fin, wings, trim and stripe |
+| `scripts/build_pe.py` | The script that builds the ship. Nobody needs to edit it |
+| `scripts/final.py` | Renders pictures and exports a 3D file |
+| `scripts/logo.png`, `scripts/logo_m.png` | The logo for the right and left faces of the fin. They are not copies: one is the logo mirrored, the other turned 180 degrees |
+| `README.md` | What was done and what was not |
 
-## What the group needs
+## The settings the group changes
 
-- The STL folder on the coach's laptop, and the AI-generated pictures printed or on a screen.
-- A laptop with an AI chat and a web browser.
-- Wi-Fi while the page loads (the 3D code comes from a CDN). Test this on the real network, and decide how to run it offline.
-
-## Method
-
-1. **Look.** Sort the AI pictures into front, side, top and back views. List the parts you can see.
-2. **Read the file list.** Which parts exist as files? Which things in the pictures have no part? Which parts have no picture?
-3. **Spec the viewer.** Write three lists: what it must do (load the chosen files from the computer, show every part, let you switch parts on and off), what the AI may decide (colors, layout, controls), and what it must ask about (units, where parts go).
-4. **Build.** Ask the AI for one HTML file. Open it, choose the STL files, and look.
-5. **Catch.** Compare the AI pictures to the real parts. Find at least two things the pictures got wrong. Check the AI's claims about units and sizes against the file.
-6. **Stretch.** Add a way to move a part (sliders for x, y, z) and assemble the wings and landing gear by eye. That decision is yours, and the pictures that guide it are themselves AI-made.
+In `params.json`, the colors block names each part's color and glossiness, for example the hull, the dark parts (fin, wings, legs), the trim, the stripe and the glass. Each entry is a color code and a number. A group can also change one proportion, found in the same file.
 
 ## Starter prompt
 
-> I have 26 STL files of a 3D-printable spaceship, with names like Hull_Front, Wing_Left, Dome and Nozzle_A. Write ONE HTML file that lets me choose the .stl files from my computer and shows them together in a 3D scene I can rotate. Use three.js version 0.160.0 from the jsdelivr CDN with an import map, plus STLLoader and OrbitControls from its addons. Set the camera up-axis to Z. Give each part a color based on its name, a checkbox to show or hide it, and its size next to its name. Add an Explode slider and a Reset view button. The files must stay on my computer. At the end, tell me what you assumed about the units.
+> Here is the colors block of a settings file for a 3D model, in JSON: [paste]. I want a variant for [who it is for], and it should feel [two or three words]. Give me a new colors block with the same names and the same structure, using real hex color codes. Change nothing else. Tell me what each color is for.
 
 ## Things to catch
 
-A picture that shows a part the files do not have. A part the files have that no picture shows. A size the AI quoted that does not match the part. A units claim with no evidence. A logo that is flipped or reversed. A hull that is upright, because it is laid out for printing.
+A color code that is not a color. Invalid JSON (a missing comma). A palette that does not match the brief. A change on one side of the ship that does not show on the other. A logo that reads backwards from one side.
 
 ## Limits
 
-A viewer, not a modeling tool. It shows geometry; it does not repair or edit it. Big files can be slow on a weak laptop.
+The ship's shape is the original model's. A group changes how it looks, not how it is built. The tested loop used one AI; do not claim any other AI can do it until it has been tried. The logo swap needs an image tool to make the mirrored copy, so it is a coach stretch, not a group task.
 
-## Coach reference
+## Optional stretch: the real 3D-print parts
 
-[`reference-viewer.html`](reference-viewer.html) is one finished viewer built to this prompt. Do not show it to the group before they have built their own.
+[`reference-viewer.html`](reference-viewer.html) is a tested one-page viewer for a set of 26 STL part files of a 3D-printable version of the same ship. The files are not included (their license is unknown). It was tested once on one machine. It is for a coach who wants a group to compare the AI's variant against real parts.

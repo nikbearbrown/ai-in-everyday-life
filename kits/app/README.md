@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-**What this is.** A small text-adventure game, a remake of the classic *Oregon Trail*, written in plain HTML, CSS and JavaScript. It runs by opening one file in a browser. Your group changes it with an AI into a new journey, with new events, new resources and a new feature. **Why it works for an hour.** The whole game is seven small files (about 17 KB of code), so you can paste all of it into an AI chat. **Status.** Not run as a workshop yet. Someone needs to open it in a browser and play it through once before the day.
+**What this is.** A small text-adventure game in the style of the classic *Oregon Trail*, written in plain HTML, CSS and JavaScript. The version in the repository below is startup-themed: you grow a team to 1,000 users. It runs by opening one file in a browser. Your group changes it with an AI into a new journey, with new events, new resources and a new feature. **Why it works for an hour.** The whole game is seven small files (about 17 KB of code), so you can paste all of it into an AI chat. **Status.** Not run as a workshop yet. A small Claude model reskinned a copy into "your first year at university" from one plain request, and Claude checked that it ran in a browser (see the coach reference below). Nobody has played a full game.
 
 ## Get it
 
@@ -28,3 +28,11 @@ Open the game fresh. Play a full game. Click every button. Win once. Lose once. 
 ## Limits
 
 No accounts, no shared score board between players, and nothing is saved except in that one browser. Everything is made up; use no real personal data.
+
+## Student pack
+
+[`PACK.md`](PACK.md) is the one-page pack each student gets: theme menu, numbers to change, the exact prompt, and a check list.
+
+## Coach reference
+
+A finished reskin, "Your first year at university," was made by a small Claude model and checked in a browser. It is not in this repository. Ask the author for the folder `oregon-trail-first-year-claude`. Do not show it to the group before they build their own.

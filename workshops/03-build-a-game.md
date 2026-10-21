@@ -9,6 +9,7 @@
 | | |
 |---|---|
 | **Kit** | [kits/game](../kits/game/README.md) |
+| **Student pack** | [kits/game/PACK.md](../kits/game/PACK.md). Each student picks a different feel and numbers |
 | **Tool** | Godot 4.7.2 on the coach's laptop, plus an AI chat |
 | **Roles** | Driver (keyboard), Designer (what to change), Playtester (plays), Demo captain |
 | **Coach** | Someone comfortable opening Godot. If nobody is, use the browser fallback. |

@@ -9,6 +9,7 @@
 | | |
 |---|---|
 | **Kit** | [kits/app](../kits/app/README.md) |
+| **Student pack** | [kits/app/PACK.md](../kits/app/PACK.md). Each student picks a different journey and numbers |
 | **Tool** | A web browser and an AI chat |
 | **Roles** | Driver (keyboard), Designer (the new journey), Tester (plays), Demo captain |
 

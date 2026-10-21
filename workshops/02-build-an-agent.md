@@ -9,6 +9,7 @@
 | | |
 |---|---|
 | **Kit** | [kits/agent](../kits/agent/README.md) |
+| **Student pack** | [kits/agent/PACK.md](../kits/agent/PACK.md). Each student invents a different organization |
 | **Tool** | A chat AI that supports saved instructions and a knowledge file (a Project, a Gem or a custom GPT) |
 | **Roles** | Driver (keyboard), Designer (the hand-off rules), Tester (the sample emails), Demo captain |
 | **Coach owns** | The group for the whole hour |

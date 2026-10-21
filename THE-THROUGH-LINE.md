@@ -77,7 +77,7 @@ One tool, used in every track, printed on the take-home card. Full template in [
 | 01 Intro: The World Has Changed | Watch a student build live; compare a vague request to a spec | Catch the AI being wrong; the two hands |
 | 02 Build: An Agent | Spec and direct an email assistant | The gate: a person approves every reply, and flags what must not be answered |
 | 03 Build: A Game | Direct changes to a Godot platformer | What makes it fun is a human call; watch a stranger play |
-| 04 Build: A 3D Model | Describe a tool precisely enough that the AI builds it | Compare the AI's pictures to the real files; decide where parts go |
+| 04 Build: A 3D Model | Give a simple tool enough information to do real work | The design and the check are yours: does the render match the brief, from every side? |
 | 05 Build: A Web App | Direct a full change to a small program | What the rules reward is a human choice |
 | 06 The Ledger and the Demos | The artifact running live | The signature and the honest "what we did not check" |
 | 07 Close | Master tools in a graduate program | Judgment as the thing a degree builds |

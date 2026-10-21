@@ -20,7 +20,7 @@
 |---|---|---|---|
 | Agent | [02](workshops/02-build-an-agent.md) | An email assistant that drafts replies and stops for a person's approval | A chat AI with saved instructions and a knowledge file |
 | Game | [03](workshops/03-build-a-game.md) | A changed Claude Jumpman platformer in Godot | Godot 4.7.2 on the coach's laptop, an AI chat |
-| 3D model | [04](workshops/04-build-a-3d-model.md) | A 3D viewer for the real part files of a cartoon delivery ship, compared to AI pictures | The 26 STL files on the coach's laptop, a browser, an AI chat |
+| 3D model | [04](workshops/04-build-a-3d-model.md) | A new variant of a Blender-built cartoon ship, made by editing its settings | Blender on the coach's laptop, the ship folder, an AI chat |
 | Web app | [05](workshops/05-build-a-web-app.md) | A reskinned Oregon Trail game with a new feature | A browser and an AI chat |
 
 Starter files for each are in [kits/](kits/).
@@ -58,13 +58,17 @@ Recruit 7 or 8 to land 5 or 6. One coach, one group, the whole build.
 
 20 students, four groups of five, student choice, balanced by experience. Every group gets at least one student who has written code and at least one who has not. Say it aloud: *the coder is not the leader; the person who understands the user is.*
 
+## How the AI is accessed
+
+**Each student pre-registers their own free Claude account** and brings a laptop ([PRE-WORK.md](PRE-WORK.md)). Each track ships a **student pack**: complete instructions, the exact numbers to change, tested starter prompts and a menu of variations, so a free account only has to do light work. **Every student makes their own variant** (different colors, theme, numbers or organization), then the group compares. Free accounts have usage limits, so the packs say to paste only the small file being changed.
+
 ## Equipment (decision pending)
 
 | Track | Needs |
 |---|---|
 | All | One laptop per track with an AI assistant, a projector, working Wi-Fi |
 | Game | **Godot 4.7.2 installed** on that laptop (free, no installer, no account) |
-| 3D | The STL folder copied to the laptop; the AI pictures printed or on a screen |
+| 3D | Blender installed (free, large download) and the ship folder copied to the laptop |
 | Agent | An AI tool with saved instructions and a knowledge file; test the instruction length cap |
 
 Each coach tests their track on the real laptop with the real AI on a different day. Without that, no one knows if it fits in an hour.
