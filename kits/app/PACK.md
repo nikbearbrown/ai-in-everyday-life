@@ -19,7 +19,7 @@ These are in `js/Constants.js`. The first number is the original. Change one or 
 | Setting | What it does | Original | Try |
 |---|---|---|---|
 | `GAME_SPEED` | Milliseconds per tick (smaller is faster) | 800 | 400 |
-| `EVENT_PROBABILITY` | Chance of a random event each tick | 0.15 | 0.3 (chaos) or 0.05 (calm) |
+| `EVENT_PROBABILITY` | Chance of a random event each tick | 0.15 | 0.3 (more events) or 0.05 (fewer). More events is not automatically harder: in one tested version it made the game easier, so play it and see |
 | `DAY_PER_STEP` | How much time passes each tick | 0.2 | 0.4 (shorter game) |
 | `FINAL_USERS` | The goal | 1000 | 500 (easier) or 2000 (hard) |
 
