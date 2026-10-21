@@ -20,7 +20,7 @@
 |---|---|---|---|
 | Agent | [02](workshops/02-build-an-agent.md) | An email assistant that drafts replies and stops for a person's approval | A chat AI with saved instructions and a knowledge file |
 | Game | [03](workshops/03-build-a-game.md) | A changed Claude Jumpman platformer in Godot | Godot 4.7.2 on the coach's laptop, an AI chat |
-| 3D model | [04](workshops/04-build-a-3d-model.md) | A rotatable starship built from the plans | Printed plans, a ruler, an AI chat that accepts a photo |
+| 3D model | [04](workshops/04-build-a-3d-model.md) | A rotatable cartoon delivery ship built from reference photos | Printed photos, a ruler, an AI chat that accepts photos |
 | Web app | [05](workshops/05-build-a-web-app.md) | A reskinned Oregon Trail game with a new feature | A browser and an AI chat |
 
 Starter files for each are in [kits/](kits/).
@@ -64,7 +64,7 @@ Recruit 7 or 8 to land 5 or 6. One coach, one group, the whole build.
 |---|---|
 | All | One laptop per track with an AI assistant, a projector, working Wi-Fi |
 | Game | **Godot 4.7.2 installed** on that laptop (free, no installer, no account) |
-| 3D | A printer for the plans, rulers, pencils |
+| 3D | A printer for the photos, rulers, pencils |
 | Agent | An AI tool with saved instructions and a knowledge file; test the instruction length cap |
 
 Each coach tests their track on the real laptop with the real AI on a different day. Without that, no one knows if it fits in an hour.

@@ -9,7 +9,7 @@
 1. **Master the tools.** Spec it, direct it, check it, chain it. Students keep their hands on the keyboard.
 2. **Keep what is irreducibly human.** Notice the right problem, smell a wrong answer, be with people, decide together, own the consequence.
 
-**What you get.** A short intro, then four hands-on builds of about an hour each: an **email agent** that drafts replies but stops for a person's approval, a **game** (the Claude Jumpman platformer, in Godot), a **3D model** (a starship built from its plans), and a **web app** (an Oregon Trail remake). Plus a demo round, a close, a run of show for 90 minutes, 2 hours or a half day, and a guide for the people who coach. Starter files are in [kits/](kits/).
+**What you get.** A short intro, then four hands-on builds of about an hour each: an **email agent** that drafts replies but stops for a person's approval, a **game** (the Claude Jumpman platformer, in Godot), a **3D model** (a cartoon delivery ship built from photos), and a **web app** (an Oregon Trail remake). Plus a demo round, a close, a run of show for 90 minutes, 2 hours or a half day, and a guide for the people who coach. Starter files are in [kits/](kits/).
 
 **Status.** These are drafts. No workshop has been run with a live audience yet. Expect to adapt them, and please tell us what breaks.
 
@@ -38,7 +38,7 @@
 
 - The ideas are teaching lenses from the author's courses and writing. They are not research findings, and the materials quote no statistics.
 - Any program facts in the close (workshop 07) must be confirmed with your own program office. The repo invents none.
-- The starship plans are copyrighted and are not in this repository. The Oregon Trail code is a third-party MIT project, linked and not copied. The Claude Jumpman game is linked, and its repository carries no license file yet.
+- The 3D track's reference photos show a copyrighted character design and are not in this repository. The Oregon Trail code is a third-party MIT project, linked and not copied. The Claude Jumpman game is linked, and its repository carries no license file yet.
 - Facilitators appear by first name and last initial only. No students are ever named.
 
 ## License
