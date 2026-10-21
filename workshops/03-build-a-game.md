@@ -14,6 +14,14 @@
 | **Roles** | Driver (keyboard), Designer (what to change), Playtester (plays), Demo captain |
 | **Coach** | Someone comfortable opening Godot. If nobody is, use the browser fallback. |
 
+## What the finished build looks like
+
+A small 2D platformer starring the Claude mascot: run, jump, collect tokens, stomp bugs, reach the flag. These are real screens from the game. A group's version looks the same but plays differently, with a higher or floatier jump, or a changed level.
+
+![The Course complete screen of the Shipping Lane level, with the mascot and the finish flag](../images/game/game-complete.jpg)
+
+![A powered-up brick in the level](../images/game/game-powered-brick.jpg)
+
 ## The two jobs in this track
 
 - **Master it:** Direct it. Describe a change precisely, paste the right file, run it, and paste the error back.

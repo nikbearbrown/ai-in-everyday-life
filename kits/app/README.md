@@ -36,3 +36,7 @@ No accounts, no shared score board between players, and nothing is saved except 
 ## Coach reference
 
 A finished reskin, "Your first year at university," was made by a small Claude model and checked in a browser. It is not in this repository. Ask the author for the folder `oregon-trail-first-year-claude`. Do not show it to the group before they build their own.
+
+## A note on the original's pictures
+
+The original repository's page shows images from a TV show. Do not use or republish those. The coach reference version replaced them with a plain emoji scene.

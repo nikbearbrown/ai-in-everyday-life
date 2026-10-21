@@ -14,6 +14,12 @@
 | **Roles** | Driver (keyboard), Designer (the hand-off rules), Tester (the sample emails), Demo captain |
 | **Coach owns** | The group for the whole hour |
 
+## What the finished build looks like
+
+A chat with your assistant. You paste an email; it replies with a summary, then either a draft (with its sources) and a gate, or a flag for a human. This is the real output of a test run with a small Claude model, shown as a screen. A group's own will look similar, with their own organization.
+
+![A test run of the email assistant: two drafted replies, four flags for a human](../images/agent/inbox-copilot-test-run.jpg)
+
 ## The two jobs in this track
 
 - **Master it:** Spec it and direct it. Turn a plain instruction into rules an assistant follows every time, then test it hard.

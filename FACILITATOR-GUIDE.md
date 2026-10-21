@@ -19,6 +19,16 @@ If a group is doing only the first, ask the human questions. If it is doing only
 - **Mixed groups.** Seat the confident coders next to the confident talkers. Say aloud that the person who understands the user is the leader.
 - **Keep time.** The build is about 65 minutes in five steps (look, spec, build, catch, ledger). Use the timer.
 
+## You do not need to live-code
+
+You are not expected to write code in front of the group, and nobody will ask you to. The guide is the script. Three things to do instead:
+
+1. **Follow the five steps** (look, spec, build, catch, ledger) and keep time.
+2. **Show the finished picture first.** Every track guide opens with images of what the group is building. Put them on the screen at the start, so nobody has to guess.
+3. **Ask the question, do not type the answer.** When a group is stuck, ask "what would you tell the AI?" or "what does the error say?" Then let the driver type it.
+
+If something breaks and you do not know why, say so. Paste the exact error into the AI together and read the answer aloud. That is the skill you are teaching.
+
 ## Safety rules for using AI with students
 
 1. **One laptop per track.** The coach's laptop, one general-purpose AI assistant, no student accounts. A student drives the keyboard; the coach does not.

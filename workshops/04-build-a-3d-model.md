@@ -13,6 +13,22 @@
 | **Tool** | Blender on the coach's laptop (free), the ship folder, a text editor, and an AI chat. A free simple model works |
 | **Roles** | Driver (keyboard), Designer (the brief), Checker (reads every render critically), Demo captain |
 
+## What the finished build looks like
+
+A cartoon delivery spaceship, rendered from the build script. Below: the base ship in Northeastern colors, then three variants made only by changing the colors block. Your group's will have its own palette, one changed number, and maybe its own emblem.
+
+![The ship, front three-quarter view, in red, black and white](../images/3d/ship-front34.jpg)
+
+![Three palette variants: beach, night shift, and green and gold](../images/3d/ship-palette-variants.jpg)
+
+The emblem on the tail fin has to read correctly from both sides. This check shows a plain bolt emblem on each side of the fin:
+
+![A bolt emblem on both sides of the tail fin](../images/3d/ship-emblem-both-sides.jpg)
+
+| Side view | Rear view |
+|---|---|
+| ![Side view](../images/3d/ship-side.jpg) | ![Rear view](../images/3d/ship-rear34.jpg) |
+
 ## The two jobs in this track
 
 - **Master it:** Spec it and direct it. Hand the AI the settings file and a precise brief, and get back a change that runs.

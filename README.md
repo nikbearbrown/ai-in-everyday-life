@@ -13,6 +13,16 @@
 
 **Status.** These are drafts. No workshop has been run with a live audience yet. Expect to adapt them, and please tell us what breaks.
 
+## What the finished builds look like
+
+| Agent | Game |
+|---|---|
+| ![Email assistant test run](images/agent/inbox-copilot-test-run.jpg) | ![Platformer, course complete](images/game/game-complete.jpg) |
+| **3D model** | **Web app** |
+| ![Ship variants](images/3d/ship-palette-variants.jpg) | ![First-year game running](images/app/first-year-game-running.jpg) |
+
+These are real outputs: the platformer is a screen from the game itself; the ship, the web game and the assistant test were made and checked in testing. See "What has been tested" below for exactly what that means.
+
 ## How to use this
 
 1. Read [THE-THROUGH-LINE.md](THE-THROUGH-LINE.md). It is the idea behind everything.

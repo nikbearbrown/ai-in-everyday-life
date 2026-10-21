@@ -13,6 +13,12 @@
 | **Tool** | A web browser and an AI chat |
 | **Roles** | Driver (keyboard), Designer (the new journey), Tester (plays), Demo captain |
 
+## What the finished build looks like
+
+A small browser game, opened from one file. This is the first-year-at-university version running: week 3 of 36, 10 of 120 credits, with motivation, sleep, money and favors on the left. A group's version has its own theme and stats.
+
+![The first year at university game running in a browser](../images/app/first-year-game-running.jpg)
+
 ## The two jobs in this track
 
 - **Master it:** Direct it. Paste a whole small program, ask for a precise change, and run it.
