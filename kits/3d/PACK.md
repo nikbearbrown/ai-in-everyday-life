@@ -38,7 +38,7 @@ Change **one number at a time** and rebuild, so you know which change did what.
 
 ## Step 3. Logo (optional)
 
-The `logos` folder has three plain emblems: star, wave and bolt. Copy **both** `logo.png` and `logo_m.png` from one folder over the two in `scripts`. Copying only one makes the emblem read backwards on one side. If your theme uses a real school's or company's marks, ask your coach first.
+The `logos` folder has three plain emblems: star, wave and bolt. Copy **both** `logo.png` and `logo_m.png` from one folder over the two in `scripts`. Copying only one changes only one side of the fin: the other side keeps the old logo. If your theme uses a real school's or company's marks, ask your coach first.
 
 ## Step 4. Build and look
 

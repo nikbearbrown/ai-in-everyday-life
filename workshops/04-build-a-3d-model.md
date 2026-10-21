@@ -49,7 +49,7 @@ Install Blender. Copy the ship folder to the laptop. Run `build.command` once, a
 
 ## The things to catch
 
-A color code that is not a color. A file the AI broke with a stray comma. A palette that does not match the brief ("warm and friendly" that came back cold). A change that fixed the front and left the back wrong. A logo that reads backwards on one side. An AI that changed more than you asked.
+A color code that is not a color. A file the AI broke with a stray comma. A palette that does not match the brief ("warm and friendly" that came back cold). A change that fixed the front and left the back wrong. A logo that changed on only one side of the fin. An AI that changed more than you asked.
 
 ## Debrief questions
 

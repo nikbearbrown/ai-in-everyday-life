@@ -30,7 +30,7 @@ In `params.json`, the colors block names each part's color and glossiness, for e
 
 ## Things to catch
 
-A color code that is not a color. Invalid JSON (a missing comma). A palette that does not match the brief. A change on one side of the ship that does not show on the other. A logo that reads backwards from one side.
+A color code that is not a color. Invalid JSON (a missing comma). A palette that does not match the brief. A change on one side of the ship that does not show on the other. A logo that changed on only one side of the fin.
 
 ## Limits
 
