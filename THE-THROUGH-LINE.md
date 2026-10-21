@@ -20,7 +20,7 @@
 
 ## The world has changed (what we can show, not just say)
 
-In the first ten minutes the master class lead does one live thing: gives a general-purpose AI a real task and lets the room watch it produce a plan, a draft and a table in under a minute. No slides about "disruption." Just the thing happening.
+In the first minutes a student, not the presenter, gives a general-purpose AI a real task and the room watches it build something that runs. No slides about "disruption." Just the thing happening.
 
 Then one question to the room: **if the first draft is now free, what is left for you?**
 
@@ -45,10 +45,10 @@ Five human moves, in undergraduate words. Each maps to a capacity the author's f
 
 | Human move | In plain words | Where it shows up in the day |
 |---|---|---|
-| **Notice the right problem** | Choose which problem is worth solving, and frame it so different framings would need different fixes | Lab 04 Campus Concierge, Lab 08 |
-| **Smell a wrong answer** | Judge whether an output could even be true *before* you look it up | Master class 02, every lab's Catch Card |
-| **Be with people** | Care, consent, trust, being present for someone frightened or stuck | Lab 05 Service Desk, Lab 06 Care Circle |
-| **Disagree and decide together** | Hold your own position, argue, and reach a decision a group will own | Lab 07, the pitch round |
+| **Notice the right problem** | Choose which problem is worth solving, and frame it so different framings would need different fixes | Every track's spec step; the web app (what does the game count as a win?) |
+| **Smell a wrong answer** | Judge whether an output could even be true *before* you look it up | The intro's catch round, every track's Catch Card |
+| **Be with people** | Care, consent, trust, being present for someone frightened or stuck | The agent (who must a person handle?), the game (watching a stranger play) |
+| **Disagree and decide together** | Hold your own position, argue, and reach a decision a group will own | The group's own build, the demo round |
 | **Own the consequence** | Put your name on it; accept what happens next | The signature line on every Driver's Ledger |
 
 Three verdicts for any task, as a way to think about handing work over:
@@ -63,7 +63,7 @@ The skill of sorting a task into one of these three is itself one of the human s
 
 ## The Driver's Ledger
 
-One tool, used in every lab, printed on the take-home card. Full template in [workshops/09](workshops/09-shared-drivers-canvas-and-ethics-cards.md).
+One tool, used in every track, printed on the take-home card. Full template in [workshops/06](workshops/06-the-ledger-and-the-demos.md).
 
 | What the AI did | What we checked, and how | What a human decided and signs | Why that part stays human |
 |---|---|---|---|
@@ -74,18 +74,13 @@ One tool, used in every lab, printed on the take-home card. Full template in [wo
 
 | Module | Master it | Keep it human |
 |---|---|---|
-| 00 Prompt Relay | Specificity: a precise spec beats a clever prompt | You were the one who knew what you meant |
-| 01 The World Has Changed | Watch a real 60-second AI build | The five human moves, tier-sort cards |
-| 02 Catch the AI Being Wrong | Check it independently | Verdict before lookup |
-| 03 The System and the Driver's Seat | Chain it: read a real skill and a real agent | Find where each must hand back to a person |
-| 04 Campus Concierge | Spec it | Notice the right problem |
-| 05 Service Desk | Direct it (a bot persona and its rules) | When must the bot hand off to a human? |
-| 06 Care Circle | Check it | "I don't know" as a valid answer; privacy and consent |
-| 07 Learning Buddy | Direct it (tutor, not answer machine) | The struggle is the point |
-| 08 Everyday Fixer | Spec, direct, check, the whole loop | Match scrutiny to use |
-| 09 Driver's Canvas | The ledger | The signature |
-| 10 Pitch | Show the artifact | Show the catch |
-| 11 Next step | Master tools in a graduate program | Judgment as the thing a degree builds |
+| 01 Intro: The World Has Changed | Watch a student build live; compare a vague request to a spec | Catch the AI being wrong; the two hands |
+| 02 Build: An Agent | Spec and direct an email assistant | The gate: a person approves every reply, and flags what must not be answered |
+| 03 Build: A Game | Direct changes to a Godot platformer | What makes it fun is a human call; watch a stranger play |
+| 04 Build: A 3D Model | Turn plans into numbers into a prompt | Compare to the world; say what the model is not |
+| 05 Build: A Web App | Direct a full change to a small program | What the rules reward is a human choice |
+| 06 The Ledger and the Demos | The artifact running live | The signature and the honest "what we did not check" |
+| 07 Close | Master tools in a graduate program | Judgment as the thing a degree builds |
 
 ## Lens, not law
 

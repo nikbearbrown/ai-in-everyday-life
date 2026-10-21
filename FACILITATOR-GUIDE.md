@@ -13,17 +13,17 @@ If a group is doing only the first, ask the human questions. If it is doing only
 
 ## How to coach
 
-- **Students drive; you do not touch the keyboard.** Rotate the driver every four to five minutes. A coach typing is a coach doing the work.
+- **Students drive; you do not touch the keyboard.** Rotate the driver every eight minutes. A coach typing is a coach doing the work.
 - **Ask, do not tell.** "What would a wrong answer look like?" beats "that looks wrong."
-- **Praise the catch.** The most valuable moment in a lab is a student finding something the AI got wrong.
+- **Praise the catch.** The most valuable moment in a build is a student finding something the AI got wrong.
 - **Mixed groups.** Seat the confident coders next to the confident talkers. Say aloud that the person who understands the user is the leader.
-- **Keep time.** The lab is 40 minutes. Use the timer.
+- **Keep time.** The build is about 65 minutes in five steps (look, spec, build, catch, ledger). Use the timer.
 
 ## Safety rules for using AI with students
 
-1. **One shared screen per table by default.** The coach's laptop, one general-purpose AI assistant, no student accounts.
+1. **One laptop per track.** The coach's laptop, one general-purpose AI assistant, no student accounts. A student drives the keyboard; the coach does not.
 2. **No personal data in any prompt.** No names of real people, no student IDs, no health information, no addresses, no real account numbers. Everything in a scenario is made up.
-3. **No medical, legal or financial advice from the AI is presented as real.** Everything in a lab is a design exercise.
+3. **No medical, legal or financial advice from the AI is presented as real.** Everything in a build is a design exercise.
 4. **Be honest about what the AI is.** It is a tool that produces fluent text. Say what you saw it do. Do not say "it understands" or "it cannot ever."
 5. **Do not repeat or share anything a student says about themselves** beyond the table. If a student shares something sensitive, respond kindly and point them to the UConn host.
 6. **Recording only with confirmed consent.** If the documenter has not confirmed it, do not record.
@@ -38,7 +38,7 @@ If a group is doing only the first, ask the human questions. If it is doing only
 | A student seems lost | Give them the user hat: "Who is the person we are building this for?" |
 | A student asks "will this take my job?" | Say what you do: "Here is what it did well today, and here is what I still do myself." Do not quote statistics. |
 | A student asks about admission or costs | Send them to the faculty or staff anchor. Do not guess. |
-| A group finishes early | Draw an Ethics Card. Then add one more thing to "what we did not check." |
+| A group finishes early | Add a second change, or try to break your own build and add one more line to "what we did not check." |
 
 ## What not to say
 
